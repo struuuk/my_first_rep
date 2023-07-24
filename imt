@@ -1,0 +1,15 @@
+name = input('Твоё имя: ')
+height = float(input("Введи свой рост(см): "))
+weight = float(input('Введи свой вес(кг): '))
+IMT = weight / height ** 2 * 10000
+print('Индекс массы тела:', IMT)
+if IMT < 19:
+    print('ИМТ:', IMT, 'Нужно больше жрать!')
+elif IMT >= 19 and IMT <25:
+    print('И так,',name,', твой ИМТ:', round(IMT), '- У тебя все заебок!')
+elif IMT >=25 and IMT <29:
+    print('И так, ',name,', ИМТ:', round(IMT), '- Ты слишком много жрешь!')
+elif IMT >= 29:
+    print(name,', ИМТ:', round(IMT), ', Вы - жиробасина!')
+
+input()
